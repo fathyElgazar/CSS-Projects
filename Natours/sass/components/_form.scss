@@ -15,6 +15,10 @@
     color: inherit;
     transition: all 0.3s;
 
+    @include respond(tap-port) {
+      width: 100%;
+    }
+
     &::placeholder {
       color: $color-grey-dark-2;
     }
@@ -49,6 +53,11 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+
+    @include respond(tap-port) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
   }
 
   &__radio-input {
