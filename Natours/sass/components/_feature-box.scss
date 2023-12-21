@@ -7,6 +7,10 @@
   text-align: center;
   transition: all 0.3s;
 
+  @include respond(tap-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -16,8 +20,12 @@
       $color-primary-light,
       $color-primary-dark
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+
+    @include respond(tap-port) {
+      margin-bottom: 0;
+    }
   }
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
