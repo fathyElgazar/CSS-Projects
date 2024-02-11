@@ -11,46 +11,82 @@
       <aside class="aside">
         <div class="logo-box">
           <img src="images/berserk-logo.png" alt="Berserk logo" class="logo" />
-          <p>Berserk the Armor</p>
+          <h2 class="logo-heading">Berserk</h2>
         </div>
       </aside>
       <main class="sign-up">
         <div class="heading-box">
           <h1 class="heading-primary">
             This is not a real online service you know you need something like
-            this in your life
+            this in your life yo help you realize your deepest dreams. <br />
+            Sign up <span>now</span> to get started.
           </h1>
+          <p>You <span> know </span>you want to.</p>
         </div>
         <form class="form" id="form">
           <h2 class="heading-secondary">Let's do it</h2>
           <ul class="form-controls">
             <li>
-              <label for="fname">First name</label
-              ><input type="text" id="fname" />
+              <label for="fname">First name:</label
+              ><input
+                type="text"
+                id="fname"
+                placeholder="First name"
+                required
+                name="first name"
+              />
             </li>
             <li>
-              <label for="lname">Last name</label
-              ><input type="text" id="lname" />
+              <label for="lname">Last name:</label
+              ><input
+                type="text"
+                id="lname"
+                placeholder="Last name"
+                name="last name"
+              />
             </li>
             <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="gazzar@gmail.com"
+                name="e-mail"
+              />
             </li>
             <li>
-              <label for="phone">Phone number</label
-              ><input type="tel" id="phone" />
+              <label for="phone">Phone number:</label
+              ><input
+                type="tel"
+                id="phone"
+                placeholder="Number"
+                name="phone number"
+              />
             </li>
             <li>
-              <label for="password">Password</label><input type="password" />
+              <label for="password">Password:</label
+              ><input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
             </li>
             <li>
-              <label for="password">Confirm password</label
-              ><input type="password" />
+              <label for="password">Confirm password:</label
+              ><input
+                type="password"
+                placeholder="Password"
+                name="confirmation password"
+                required
+              />
             </li>
           </ul>
         </form>
-        <button form="form" class="btn">Create account</button>
-        <p>Already hav account? <span class="log-in">log in</span></p>
+        <div class="account-box">
+          <button form="form" type="submit" class="btn">Create Account</button>
+          <p>Already have an account? <span class="log-in">Log in</span></p>
+        </div>
       </main>
     </section>
   </body>
