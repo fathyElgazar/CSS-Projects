@@ -19,6 +19,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -114,6 +115,7 @@ body {
 
   & li {
     flex: 1 0 50%;
+    position: relative;
   }
 }
 
@@ -127,7 +129,7 @@ label {
 label {
   display: block;
   margin-bottom: 0.2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -149,6 +151,22 @@ input:focus {
 }
 input:focus:required:invalid {
   border: 1px solid red;
+}
+
+.required {
+  content: '*this field is required';
+  position: absolute;
+  font-size: 0.9rem;
+  left: 0;
+  top: 6.5rem;
+  text-transform: none;
+  color: red;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+input:required:invalid + .required {
+  opacity: 1;
 }
 
 /* CREATE ACCOUNT */
@@ -178,4 +196,33 @@ input:focus:required:invalid {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .sign-up-land {
+    flex-direction: column;
+  }
+
+  .aside {
+    background-position: top;
+  }
+
+  .logo-box {
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .heading-box {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 }
