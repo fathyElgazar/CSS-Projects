@@ -192,7 +192,7 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 3.5fr 1fr;
   gap: 2rem;
 }
 
@@ -270,6 +270,42 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Trending */
+
+.trending-container {
+  list-style: none;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  box-shadow: -3px 11px 7px -6px rgba(1, 0, 0, 0.14);
+  margin-top: 1rem;
+}
+
+.trend-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.trend-container:last-child {
+  margin-bottom: 0;
+}
+
+.user-trend {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.trend-user-name {
+  font-size: 1.2rem;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.trend {
+  color: #5d5d5d;
+}
 /* /////////////////////////////////////////// */
 
 /* Style icons */
