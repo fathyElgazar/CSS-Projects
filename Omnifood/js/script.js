@@ -1,9 +1,5 @@
-console.log("hello, world!");
 
-const myName = "fathy sameh";
 const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
 
 ///////////////////////////////////////////////////////////
 // SET CURRENT YEAR
