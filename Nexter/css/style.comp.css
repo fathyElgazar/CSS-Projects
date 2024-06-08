@@ -217,7 +217,7 @@ body {
 }
 .header__seenon-logos img {
   max-height: 2.5rem;
-  width: 100%;
+  max-width: 100%;
   filter: brightness(70%);
 }
 
